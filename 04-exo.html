@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            display:flex;
+        }
+        header ul {
+            display:flex;
+            list-style: none;}
+        header ul li {
+            margin-right: 10px;
+        }
+        .hide{ /* cette class va être ajoutée en dymanique dans le menu ul via javasscript*/
+            display:none;}
+
+    </style>
+</head>
+<body>
+    <!--<h1></h1>
+    <p></p>
+    <h2>texte</h2>
+    <script>
+        /*javascript permet de modifier de manière dynamique une page web
+           pour réaliser des modifications => utiliser une variable  document 
+           document objet qui contient l'ensemble des ce que vous voyez à l'écran
+        */
+       console.log(document);
+       /* je veux sélectionner dans ma page web la balise h1 */
+       document.querySelector("h1").innerHTML = "titre principal"
+
+       /* maintenant que j'ai sélectionné la balise h1 je veux lui appliquer des modifications 
+       remplir de texte */
+       document.querySelector("h2").innerHTML = "sous-titre";
+    
+       /*sélectionner la balise p et la remplir du texte suivant : je suis un paragraphe*/
+
+       document.querySelector("p").innerHTML = "Bonjour ";
+
+       /* je veux sélectionner la balise h2 et luis rajouter du texte à la suite - conclusion */
+       let textH2 = document.querySelector("p").innerHTML; 
+       document.querySelector("p").innerHTML = textH2 + " les amis !";
+
+    </script> -->
+    <div class="container">
+        <header>
+            <button>Menu Burger</button>
+            <ul>
+                <li>Accueil</li>
+                <li>Présentation</li>
+                <li>Blog</li>
+                <li>Nous Contacter</li>
+                <li>Auteur</li>
+            </ul>
+        </header>
+    <script>
+        document.querySelector("button").onclick = function(){
+            document.querySelector("ul").classList.toggle("hide");
+        }
+        /*menu burger = html + css + js */
+    </script>
+    
+</body>
+</html>

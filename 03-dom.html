@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <h2>texte</h2>
+    <script>
+        /*javascript permet de modifier de manière dynamique une page web
+           pour réaliser des modifications => utiliser une variable  document 
+           document objet qui contient l'ensemble des ce que vous voyez à l'écran
+        */
+       console.log(document);
+       /* je veux sélectionner dans ma page web la balise h1 */
+       document.querySelector("h1")
+
+       /* maintenant que j'ai sélectionné la balise h1 je veux lui appliquer des modifications 
+       remplir de texte */
+       document.querySelector("h1").innerHTML = "j'utilise le DOM et je le remplis avec JS";
+    
+       /*sélectionner la balise p et la remplir du texte suivant : je suis un paragraphe*/
+
+       document.querySelector("p").innerHTML = "je suis un paragraphe";
+
+       /* je veux sélectionner la balise h2 et luis rajouter du texte à la suite - conclusion */
+       let textH2 = document.querySelector("h2").innerHTML; 
+       document.querySelector("h2").innerHTML = textH2 + " conclusion";
+    </script>
+
+</body>
+</html>
